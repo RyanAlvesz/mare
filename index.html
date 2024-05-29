@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/output.css">
+    <title>MARÉ</title>
+</head>
+<body class="min-h-screen flex flex-col font-inter">
+    <header class="h-[10vh] flex items-center justify-between px-8 bg-green-5">
+        <img src="./src/img/lotus.svg" alt="Lotus" class="h-full py-3">
+        <ul class="flex gap-8 text-white font-semibold text-lg">
+            <li> <a href="#" class="h-full flex"> Se proteja </a> </li>
+            <li> <a href="#" class="h-full flex"> Alimentação </a> </li>
+            <li> <a href="#" class="h-full flex"> Vacinação </a> </li>
+            <li> <a href="#" class="h-full flex"> Saúde Mental </a> </li>
+            <li> <a href="#" class="h-full flex"> Exercícios </a> </li>
+            <li> <a href="#" class="h-full flex"> Sobre </a> </li>
+        </ul>
+    </header>
+    <main class="flex flex-col items-center justify-center">
+        <section class="h-[70vh] w-full bg-green-1 grid grid-cols-2 relative">
+            <div class="flex flex-col font-comfortaa text-green-6 h-full justify-center px-16 gap-8">
+                <h2 class="font-lobster text-7xl"> Saúde e Bem-Estar </h2>
+                <span class="text-2xl">Um manual para viver bem!</span>
+                <button class="bg-green-5 px-10 py-3 w-fit rounded-xl text-white font-bold text-lg hover:bg-green-6/90 ease-linear duration-300"> 
+                    <a href="#" class="flex h-full w-full"> Saiba mais! </a>
+                </button>
+            </div>
+            <img src="./src/img/health-2.png" alt="Mulher cortando frutas" class="h-[70vh] object-cover w-full">
+            <div class="absolute w-1/2 h-full right-0 bg-gradient-to-r from-green-1 to-transparent"></div>
+        </section>
+        <section class="h-screen w-full"></section>
+        <section class="h-screen w-full bg-beige-1"></section>
+        <section class="h-screen w-full"></section>
+    </main>
+    <footer class="h-[40vh] bg-green-6 flex justify-center">
+        <h2 class="py-14 font-comfortaa font-bold text-green-7 text-4xl"> MARÉ </h2>
+    </footer>
+</body>
+</html>
