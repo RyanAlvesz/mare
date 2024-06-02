@@ -8,38 +8,113 @@
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Lobster&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./src/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/output.css">
+    <link rel="stylesheet" href="./src/css/scroll-bar.css">
+    <script src="./src/js/menu.js" defer></script>
     <title>MARÉ</title>
 </head>
 <body class="min-h-screen flex flex-col font-inter">
     <header class="h-[10vh] flex items-center justify-between px-8 bg-green-5">
-        <img src="./src/img/lotus.svg" alt="Lotus" class="h-full py-3">
-        <ul class="flex gap-8 text-white font-semibold text-lg">
-            <li> <a href="#" class="h-full flex"> Se proteja </a> </li>
-            <li> <a href="#" class="h-full flex"> Alimentação </a> </li>
-            <li> <a href="#" class="h-full flex"> Vacinação </a> </li>
-            <li> <a href="#" class="h-full flex"> Saúde Mental </a> </li>
-            <li> <a href="#" class="h-full flex"> Exercícios </a> </li>
-            <li> <a href="#" class="h-full flex"> Sobre </a> </li>
+        <button class="h-full flex items-center justify-center">
+            <a href="#" class="flex h-full">
+                <img src="./src/img/lotus.svg" alt="Lotus" class="h-full py-3">
+            </a>
+        </button>   
+        <ul class="flex gap-8 text-white font-semibold text-lg max-md:hidden">
+            <li> <a href="./src/pages/se-proteja.html" class="h-full flex hover:underline"> Se proteja </a> </li>
+            <li> <a href="./src/pages/alimentacao.html" class="h-full flex hover:underline"> Alimentação </a> </li>
+            <li> <a href="./src/pages/vacinacao.html" class="h-full flex hover:underline"> Vacinação </a> </li>
+            <li> <a href="./src/pages/saude-mental.html" class="h-full flex hover:underline"> Saúde Mental </a> </li>
+            <li> <a href="./src/pages/exercicios.html" class="h-full flex hover:underline"> Exercícios </a> </li>
+            <li> <a href="./src/pages/sobre.html" class="h-full flex hover:underline"> Sobre </a> </li>
         </ul>
+        <ul id="menu" class="hidden max-md:flex bg-gradient-to-bl from-green-4 to-beige-2 w-screen h-screen fixed bottom-0 left-0 flex-col items-center justify-center text-white text-3xl gap-6 font-medium -translate-y-full ease-linear duration-200">
+            <button id="close-menu" class="w-[5.5vh] h-[5.5vh] absolute top-4 right-8">
+                <img src="./src/img/close.svg" alt="Fechar Menu" class="w-full h-full">
+            </button>
+            <li> <a href="./src/pages/se-proteja.html" class="h-full flex"> Se proteja </a> </li>
+            <li> <a href="./src/pages/alimentacao.html" class="h-full flex"> Alimentação </a> </li>
+            <li> <a href="./src/pages/vacinacao.html" class="h-full flex"> Vacinação </a> </li>
+            <li> <a href="./src/pages/saude-mental.html" class="h-full flex"> Saúde Mental </a> </li>
+            <li> <a href="./src/pages/exercicios.html" class="h-full flex"> Exercícios </a> </li>
+            <li> <a href="./src/pages/sobre.html" class="h-full flex"> Sobre </a> </li>
+        </ul>
+        <button id="open-menu" class="hidden w-[5.5vh] h-[5.5vh] max-md:flex">
+            <img src="./src/img/menu.svg" alt="Menu" class="w-full h-full">
+        </button>
     </header>
     <main class="flex flex-col items-center justify-center">
-        <section class="h-[70vh] w-full bg-green-1 grid grid-cols-2 relative">
-            <div class="flex flex-col font-comfortaa text-green-6 h-full justify-center px-16 gap-8">
-                <h2 class="font-lobster text-7xl"> Saúde e Bem-Estar </h2>
-                <span class="text-2xl">Um manual para viver bem!</span>
-                <button class="bg-green-5 px-10 py-3 w-fit rounded-xl text-white font-bold text-lg hover:bg-green-6/90 ease-linear duration-300"> 
-                    <a href="#" class="flex h-full w-full"> Saiba mais! </a>
+        <section class="h-[70vh] w-full bg-green-1 grid grid-cols-2 relative max-md:flex">
+            <div class="flex flex-col font-comfortaa text-green-6 h-full justify-center px-16 gap-8 max-md:px-8 max-md:w-full max-md:items-center">
+                <h2 class="font-lobster text-7xl max-md:text-6xl max-sm:text-4xl text-center"> Saúde e Bem-Estar </h2>
+                <span class="text-2xl max-md:text-xl max-md:text-center max-sm:text-lg">Um manual para viver bem!</span>
+                <button class="bg-green-5 px-10 py-3 w-fit rounded-xl text-white font-bold text-lg hover:bg-green-6/90 ease-linear duration-300 max-md:text-base max-md:px-8"> 
+                    <a href="./src/pages/sobre.html" class="flex h-full w-full"> Saiba mais! </a>
                 </button>
             </div>
-            <img src="./src/img/health-2.png" alt="Mulher cortando frutas" class="h-[70vh] object-cover w-full">
-            <div class="absolute w-1/2 h-full right-0 bg-gradient-to-r from-green-1 to-transparent"></div>
+            <img src="./src/img/health-2.png" alt="Mulher cortando frutas" class="h-[70vh] object-cover w-full max-md:hidden">
+            <div class="absolute w-1/2 h-full right-0 bg-gradient-to-r from-green-1 to-transparent max-md:hidden"></div>
         </section>
-        <section class="h-screen w-full"></section>
-        <section class="h-screen w-full bg-beige-1"></section>
-        <section class="h-screen w-full"></section>
+        <section class="h-screen w-full grid grid-cols-2 max-md:flex max-md:flex-col max-md:h-auto">
+            <div class="flex flex-col">
+                <img src="./src/img/vacinacao.avif" alt="Vacinação" class="object-cover w-full h-[70%] max-md:h-[50vh]">
+                <div class="flex items-center justify-center h-[30%] max-md:bg-green-6 max-md:h-fit max-md:pt-8">
+                    <a href="./src/pages/vacinacao.html" class="flex items-center justify-center hover:underline">
+                        <h2 class="text-green-6 text-[calc(1.6rem+1.2vw)] font-extrabold tracking-widest hover:underline max-md:text-white">VACINAÇÃO</h2>
+                    </a>
+                </div>
+            </div>
+            <div class="bg-green-6 flex items-center justify-center px-[8vw] text-center relative max-md:px-[12vw] max-md:h-fit max-md:py-8">
+                <img src="./src/img/leaf.png" alt="Folha" class="absolute left-[calc(8vw-4rem)] top-[calc(8vw-4rem)] w-24 max-md:hidden">
+                <img src="./src/img/leaf.png" alt="Folha" class="absolute right-[calc(8vw-4rem)] bottom-[calc(8vw-4rem)] w-24 -scale-x-100 rotate-45 max-md:hidden">
+                <p class="text-white text-[calc(1rem+1.2vw)] max-md:text-[calc(0.8rem+1.5vw)]">
+                    As vacinas oferecem uma série de benefícios, incluindo a prevenção de doenças, proteção individual e coletiva,
+                    redução de complicações graves, contribuição para a erradicação de doenças e promoção da saúde ao longo da vida.
+                </p>
+            </div>
+        </section>
+        <section class="h-screen w-full bg-[url('../img/yoga.jpg')] bg-cover bg-no-repeat bg-center">
+            <div class="h-full w-full bg-green-1/30 flex items-center justify-center font-extrabold text-white tracking-wider text-[calc(2.5rem+7vw)] text-center">
+                <h2>SAÚDE MENTAL</h2>
+            </div>
+        </section>
+        <section class="h-[140vh] w-full bg-beige-2 grid grid-rows-2 max-md:flex max-md:flex-col max-md:h-auto">
+            <div class="grid grid-cols-2 max-md:grid-cols-1 max-md:grid-rows-2 max-md:h-[140vh]">
+                <div class="flex flex-col gap-8 px-24 justify-center bg-white max-md:px-0 max-md:py-20 max-md:items-center">
+                    <h3 class="font-comfortaa text-4xl font-extrabold">Exercícios</h3>
+                    <p class="text-xl text-black/80 max-md:text-center max-md:px-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus, ligula in dictum ultricies, mi dolor mollis nunc, ut tincidunt orci metus nec odio. Quisque pellentesque arcu elit. Morbi in.
+                    </p>
+                    <div class="relative w-fit">
+                        <a href="./src/pages/exercicios.html" class="font-comfortaa text-xl font-extrabold z-10 relative [&+div]:hover:bg-beige-2">DESCUBRA</a>
+                        <div class="absolute w-[112%] h-3 bg-beige-2/50 rounded-xl bottom-[2px] -left-[6%]"></div>
+                    </div>
+                </div>
+                <div class="flex items-center justify-center h-full max-md:-order-1">
+                    <img src="./src/img/gym.svg" alt="Academia" class="w-2/5">
+                </div>
+            </div>
+            <div class="grid grid-cols-2 max-md:grid-cols-1 max-md:grid-rows-2 max-md:h-[140vh]">
+                <div class="flex items-center justify-center">
+                    <img src="./src/img/food.svg" alt="Academia" class="w-2/5">
+                </div>
+                <div class="flex flex-col gap-8 px-24 justify-center bg-white max-md:px-0 max-md:py-20 max-md:items-center">
+                    <h3 class="font-comfortaa text-4xl font-extrabold">Alimentação</h3>
+                    <p class="text-xl text-black/80 max-md:text-center max-md:px-4">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi dapibus, ligula in dictum ultricies, mi dolor mollis nunc, ut tincidunt orci metus nec odio. Quisque pellentesque arcu elit. Morbi in.
+                    </p>
+                    <div class="relative w-fit">
+                        <a href="./src/pages/alimentacao.html" class="font-comfortaa text-xl font-extrabold z-10 relative  [&+div]:hover:bg-beige-2">DESCUBRA</a>
+                        <div class="absolute w-[112%] h-3 bg-beige-2/50 rounded-xl bottom-[2px] -left-[6%]"></div>
+                    </div>
+                </div>
+            </div>   
+        </section>
     </main>
-    <footer class="h-[40vh] bg-green-6 flex justify-center">
-        <h2 class="py-14 font-comfortaa font-bold text-green-7 text-4xl"> MARÉ </h2>
-    </footer>
+    <footer class="h-[40vh] bg-green-6 flex flex-col items-center justify-center text-green-7">
+        <div class="flex flex-col items-center gap-2">
+            <img src="./src/img/lotus-green.svg" alt="Logo MARÉ" class="w-24 max-md:w-20">
+            <h2 class="font-comfortaa font-extrabold text-4xl max-md:text-3xl"> MARÉ </h2>
+        </div>
+    </footer> 
 </body>
 </html>
