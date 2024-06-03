@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Inter:wght@100..900&family=Lobster&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../img/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/output.css">
+    <link rel="stylesheet" href="../css/scroll-bar.css">
+    <script src="../js/menu.js" defer></script>
+    <title>Alimentação</title>
+</head>
+<body class="min-h-screen flex flex-col font-inter">
+    <header class="h-[10vh] flex items-center justify-between px-8 bg-green-5">
+        <button class="h-full flex items-center justify-center">
+            <a href="../../index.html" class="flex h-full">
+                <img src="../img/lotus.svg" alt="Lotus" class="h-full py-3">
+            </a>
+        </button>   
+        <ul class="flex gap-8 text-white font-semibold text-lg max-md:hidden">
+            <li> <a href="./se-proteja.html" class="h-full flex hover:underline"> Se proteja </a> </li>
+            <li> <a href="#" class="h-full flex hover:underline"> Alimentação </a> </li>
+            <li> <a href="./vacinacao.html" class="h-full flex hover:underline"> Vacinação </a> </li>
+            <li> <a href="./saude-mental.html" class="h-full flex hover:underline"> Saúde Mental </a> </li>
+            <li> <a href="./exercicios.html" class="h-full flex hover:underline"> Exercícios </a> </li>
+            <li> <a href="./sobre.html" class="h-full flex hover:underline"> Sobre </a> </li>
+        </ul>
+        <ul id="menu" class="hidden max-md:flex bg-gradient-to-bl from-green-4 to-beige-2 w-screen h-screen fixed bottom-0 left-0 flex-col items-center justify-center text-white text-3xl gap-6 font-medium -translate-y-full ease-linear duration-200 z-20">
+            <button id="close-menu" class="w-[5.5vh] h-[5.5vh] absolute top-4 right-8">
+                <img src="../img/close.svg" alt="Fechar Menu" class="w-full h-full">
+            </button>
+            <li> <a href="./se-proteja.html" class="h-full flex"> Se proteja </a> </li>
+            <li> <a href="#" class="h-full flex"> Alimentação </a> </li>
+            <li> <a href="./vacinacao.html" class="h-full flex"> Vacinação </a> </li>
+            <li> <a href="./saude-mental.html" class="h-full flex"> Saúde Mental </a> </li>
+            <li> <a href="./exercicios.html" class="h-full flex"> Exercícios </a> </li>
+            <li> <a href="./sobre.html" class="h-full flex"> Sobre </a> </li>
+        </ul>
+        <button id="open-menu" class="hidden w-[5.5vh] h-[5.5vh] max-md:flex">
+            <img src="../img/menu.svg" alt="Menu" class="w-full h-full">
+        </button>
+    </header>
+    <main class="flex flex-col items-center justify-center">
+    </main>
+    <footer class="h-[40vh] bg-green-6 flex flex-col items-center justify-center text-green-7">
+        <div class="flex flex-col items-center gap-2">
+            <img src="../img/lotus-green.svg" alt="Logo MARÉ" class="w-24 max-md:w-20">
+            <h2 class="font-comfortaa font-extrabold text-4xl max-md:text-3xl"> MARÉ </h2>
+        </div>
+    </footer> 
+</body>
+</html>
