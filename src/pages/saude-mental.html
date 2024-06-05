@@ -12,7 +12,7 @@
     <script src="../js/menu.js" defer></script>
     <title>Saúde Mental</title>
 </head>
-<body class="min-h-screen flex flex-col font-inter">
+<body class="min-h-screen flex flex-col font-inter bg-cover bg-fixed bg-bottom bg-no-repeat bg-[url('../img/mental-health-2.avif')]">
     <header class="h-[10vh] flex items-center justify-between px-8 bg-green-5">
         <button class="h-full flex items-center justify-center">
             <a href="../../index.html" class="flex h-full">
@@ -27,7 +27,7 @@
             <li> <a href="./sobre.html" class="h-full flex hover:underline"> Sobre </a> </li>
         </ul>
         <ul id="menu" class="hidden max-md:flex bg-gradient-to-bl from-green-4 to-beige-2 w-screen h-screen fixed bottom-0 left-0 flex-col items-center justify-center text-white text-3xl gap-6 font-medium -translate-y-full ease-linear duration-200 z-20">
-            <button id="close-menu" class="w-[5.5vh] h-[5.5vh] absolute top-4 right-8">
+            <button id="close-menu" class="w-[5.5vh] h-[5.5vh] absolute top-12 right-8">
                 <img src="../img/close.svg" alt="Fechar Menu" class="w-full h-full">
             </button>
             <li> <a href="./se-proteja.html" class="h-full flex"> Se proteja </a> </li>
@@ -40,7 +40,90 @@
             <img src="../img/menu.svg" alt="Menu" class="w-full h-full">
         </button>
     </header>
-    <main class="flex flex-col items-center justify-center">
+    <main class="flex flex-col justify-center">
+        <section class="h-[90vh] flex flex-col text-white text-[calc(2.5rem+7vw)] font-bold items-center justify-center w-1/2 max-md:bg-black/20 max-md:w-full">
+            <h1 class="-translate-x-8 max-md:translate-x-0">Saúde</h1>
+            <h1 class="translate-x-1/2 max-md:translate-x-0">Mental</h1>
+        </section>
+        <section class="text-green-4 h-screen bg-green-1 relative overflow-hidden flex flex-col gap-8 items-center justify-center pl-[10%] pr-[35%] max-md:px-12 max-md:h-fit max-md:py-36 max-md:bg-green-1 max-md:text-green-6 max-md:gap-10">
+            <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]">Como cuidar da nossa saúde mental?</h2>
+            <p class="text-[calc(0.5rem+1.5vw)] max-md:text-[calc(1rem+1vw)] max-md:text-justify"> 
+                Ao depararmos com os diversos transtornos mentais que assolam a nossa sociedade, precisamos de maneiras eficazes de tratá-los e até mesmo evitá-los. Aqui temos algumas formas de cuidar do seu psicológico. 
+            </p>
+            <a href="#terapia" class="animate-bounce scroll-smooth">
+                <picture>
+                    <source media="(max-width:768px)" srcset="../img/arrow-down-mobile.svg">
+                    <img src="../img/arrow-down.svg" alt="Seta para baixo" class="h-12">
+                </picture>
+            </a>
+            <span class="absolute text-[120vh] leading-[100vh] bottom-0 -right-[10%] text-green-3 drop-shadow-[-8px_8px_0px_#99BC85] max-md:hidden"> ? </span>
+        </section>
+        <section id="terapia" class="h-[80vh] bg-beige-1 flex max-md:flex-col max-md:h-fit">
+            <img src="../img/mental-health.jpg" alt="Terapia" class="w-2/5 h-full object-cover max-md:w-full max-md:h-[40vh] max-md:order-2">
+            <div class="grow flex flex-col items-center justify-center px-24 gap-12 text-green-6 max-md:px-12 max-md:py-16 max-md:gap-6 max-md:text-[#8a7f67]">
+                <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]">Terapia</h2>
+                <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> 
+                    Um acompanhamento psicológico pode ajudar a lidar melhor com as situações cotidianas. Auxilia na compreensão de sentimentos, situações e pensamentos, e pode ser útil para qualquer pessoa, mesmo na ausência de transtornos.
+                    Existem psicólogos gratuitos, para aqueles que não tem condição de pagar. Há atendimento nas clínicas-escolas das faculdades, nos CAPS (Centro de Atenção Psicossocial) ou algum profissional que faça atendimento social.
+                    Se estiver se sentindo muito mal, ligue 188 para o CVV (Centro de Valorização da Vida) e converse com alguém de confiança.
+                </p>
+            </div>
+        </section>
+        <section class="h-[80vh] bg-white flex max-md:flex-col max-md:h-fit">
+            <div class="grow flex flex-col items-center justify-center px-24 gap-12 text-[#AF756B] max-md:px-12 max-md:py-16 max-md:gap-6">
+                <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]">Sono</h2>
+                <div class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify">
+                    <p> 
+                        Uma boa noite de sono é importante para todas as áreas da nossa vida, e a saúde mental não fica de fora.
+                        Aqui estão alguns passos para ter um sono de qualidade:
+                    </p>
+                    <ul class="list-disc max-md:list-none">
+                        <li> Estabelecer um horário regular para dormir e acordar todos os dias;  </li>
+                        <li> Manter o ambiente escuro, sem nenhum tipo de iluminação que possa atrapalhar o sono; </li>
+                        <li> Evitar o uso de telas pelo menos uma hora antes de adormecer; </li>
+                        <li> Praticar atividades que estimulem o relaxamento, como meditação ou leitura </li>                        
+                    </ul>
+                </div>
+            </div>
+            <img src="../img/mental-health-3.avif" alt="Mulher lendo um livro deitada em uma cama" class="w-2/5 h-full object-cover max-md:w-full max-md:h-[40vh] max-md:object-bottom">
+        </section>
+        <section class="h-[80vh] bg-green-7 flex max-md:flex-col max-md:h-fit">
+            <img src="../img/mental-health-7.jpg" alt="Pessoa mexendo no celular" class="w-2/5 h-full object-cover max-md:w-full max-md:h-[40vh] max-md:order-2">
+            <div class="grow flex flex-col items-center justify-center px-24 gap-12 text-white max-md:px-12 max-md:py-16 max-md:gap-6">
+                <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]">Diminuir o tempo nas redes sociais</h2>
+                <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> 
+                    Apesar das redes sociais serem uma forma de entretenimento, troca de informações e de comunicação, o uso excessivo pode ser muito prejudicial a saúde. O grande consumo de conteúdos de influencers mostrando uma vida “perfeita” e padrões
+                    de beleza inalcançáveis pode fazer com que o incivíduo se sinta frustrado com a própria vida, se comparando e se sentindo cada vez pior. Portanto, reduzir o tempo de consumo desses conteúdos é uma boa forma de cuidar da mente.
+                </p>
+            </div>
+        </section>
+        <section class="h-[80vh] bg-white flex max-md:flex-col max-md:h-fit">
+            <div class="grow flex flex-col items-center justify-center px-24 gap-12 text-[#B25D37] max-md:px-12 max-md:py-16 max-md:gap-6">
+                <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]">Praticar atividades físicas</h2>
+                <div class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify">
+                    <p> 
+                        Praticar exercícios físicos, independente do tipo, pode trazer inúmeras vantagens, tanto para o corpo,
+                        quanto para a mente, ainda mais com a prática constante. Alguns dos benefícios são:
+                    </p>
+                    <ul class="list-disc max-md:list-none">
+                        <li> Proporcionar bem-estar;  </li>
+                        <li> Eliminar sintomas de ansiedade e estresse; </li>
+                        <li> Reduzir o risco de transtornos mentais. </li>                        
+                    </ul>
+                </div>
+            </div>
+            <img src="../img/mental-health-6.avif" alt="" class="w-2/5 h-full object-cover max-md:w-full max-md:h-[40vh] max-md:object-top">
+        </section>
+        <section class="h-[80vh] bg-[#305D6D] flex max-md:flex-col max-md:h-fit">
+            <img src="../img/mental-health-4.avif" alt="Mulher flutuando em uma piscina" class="w-2/5 h-full object-cover object-right max-md:w-full max-md:h-[40vh] max-md:order-2">
+            <div class="grow flex flex-col items-center justify-center px-24 gap-12 text-white max-md:px-12 max-md:py-16 max-md:gap-6">
+                <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]">Lazer</h2>
+                <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> 
+                    Com todo o estresse do dia a dia, algo que certamente pode acalmar a mente são os momentos de lazer. Investir em passeios, viagens, caminhadas ou até mesmo assistir um filme pode fazer com que a mente descanse por um tempo.
+                    Lembre-se sempre de fazer algo que você goste, e a companhia de quem você ama pode deixar a atividade ainda mais divertida!
+                </p>
+            </div>
+        </section>
     </main>
     <footer class="h-[40vh] bg-green-6 flex flex-col items-center justify-center text-green-7">
         <div class="flex flex-col items-center gap-2">
