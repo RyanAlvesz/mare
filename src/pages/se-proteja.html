@@ -12,7 +12,7 @@
     <script src="../js/menu.js" defer></script>
     <title>Se proteja</title>
 </head>
-<body class="min-h-screen flex flex-col font-inter">
+<body class="min-h-screen flex flex-col font-inter bg-cover bg-fixed bg-center bg-no-repeat bg-[url('../img/covid-1.jpg')]">
     <header class="h-[10vh] flex items-center justify-between px-8 bg-green-5">
         <button class="h-full flex items-center justify-center">
             <a href="../../index.html" class="flex h-full">
@@ -27,7 +27,7 @@
             <li> <a href="./sobre.html" class="h-full flex hover:underline"> Sobre </a> </li>
         </ul>
         <ul id="menu" class="hidden max-md:flex bg-gradient-to-bl from-green-4 to-beige-2 w-screen h-screen fixed bottom-0 left-0 flex-col items-center justify-center text-white text-3xl gap-6 font-medium -translate-y-full ease-linear duration-200 z-20">
-            <button id="close-menu" class="w-[5.5vh] h-[5.5vh] absolute top-4 right-8">
+            <button id="close-menu" class="w-[5.5vh] h-[5.5vh] absolute top-16 right-8">
                 <img src="../img/close.svg" alt="Fechar Menu" class="w-full h-full">
             </button>
             <li> <a href="#" class="h-full flex"> Se proteja </a> </li>
@@ -41,6 +41,117 @@
         </button>
     </header>
     <main class="flex flex-col items-center justify-center">
+        <section class="h-[90vh] pr-[10%] pb-[10%] flex flex-col text-white text-[calc(2.5rem+7vw)] font-bold items-end justify-center w-full max-md:bg-black/20 max-md:items-center max-md:p-0">
+            <h1 class="-translate-x-[200%] max-md:translate-x-0">Se</h1>
+            <h1 class="translate-x-[15%] max-md:translate-x-0">Proteja</h1>
+        </section>
+        <section class="h-screen bg-beige-1 grid grid-cols-11 items-center px-24 max-md:flex max-md:px-12 max-md:h-fit max-md:py-24 max-md:gap-10">
+            <img src="../img/mosquito.svg" alt="Mosquito da DENGUE" class="w-full col-span-3 place-self-center max-md:hidden">
+            <div class="flex flex-col items-center justify-center gap-12 text-[#8a7f67] col-span-5 px-12 max-md:h-full max-md:w-full max-md:p-0">
+                <h2 class="text-[calc(1.8rem+1.5vw)] text-center font-bold"> DENGUE X COVID </h2>
+                <p class="text-center text-[calc(0.5rem+1.5vw)] max-md:text-[calc(1.2rem+1vw)]"> 
+                    O conhecimento é a chave para combater a ignorância. Explore tudo sobre as doenças da temporada, entenda os sintomas, aprenda a diferenciá-los e como se proteger.
+                </p>
+            </div>
+            <img src="../img/covid.svg" alt="Vírus da COVID" class="w-full col-span-3 place-self-center max-md:hidden">
+        </section>
+        <section class="h-screen w-full bg-[url('../img/covid-3.webp')] bg-cover bg-center bg-no-repeat max-md:h-fit">
+            <div class="w-full h-full flex items-center justify-center px-[10%] text-center gap-8 bg-green-7/70 text-white max-md:py-24">
+                <h2 class="text-[calc(2rem+2vw)] font-bold max-md:text-[calc(1.2rem+2vw)]"> DENGUE </h2>
+            </div>
+        </section>
+        <section class="h-fit p-24 flex items-center justify-center bg-green-7 max-md:px-12">
+            <h2 class="text-green-3 text-[calc(1rem+1vw)] text-center font-medium max-md:text-[calc(1.2rem+1vw)]"> 
+                A dengue é transmitida aos humanos através da picada do mosquito fêmea infectado do Aedes aegypti. É uma enfermidade viral resultante da infecção por um dos quatro sorotipos do vírus DENV (DENV-1, DENV-2, DENV-3 e DENV-4).
+            </h2>
+        </section>
+        <section class="h-fit w-full grid grid-cols-2 max-md:flex max-md:flex-col max-md:h-auto">
+            <div class="flex flex-col bg-white">
+                <img src="../img/covid-7.png" alt="Manchas vermelhas na pele" class="object-cover w-full h-[70%] max-md:h-[50vh]">
+                <div class="flex items-center justify-center h-[30%] max-md:bg-[#AF756B] max-md:h-fit max-md:pt-24">
+                    <h2 class="text-[#AF756B] block text-[calc(1.6rem+1.2vw)] font-extrabold tracking-widest max-md:text-white">SINTOMAS</h2>
+                </div>
+            </div>
+            <div class="bg-[#AF756B] flex items-center justify-center text-justify px-[10%] py-16 relative h-full max-md:h-fit max-md:pt-12 max-md:pb-24">
+                <p class="text-white text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)]">
+                    Os sintomas da dengue clássica incluem febre, náuseas, vômitos, erupções na pele, dores e desconfortos,
+                    variando bastante. A febre alta, surgindo abruptamente, é a primeira manifestação, seguida de dores de cabeça, 
+                    musculares, fraqueza extrema, dores nas articulações, perda de apetite, cansaço, dor atrás dos olhos, náuseas, vômitos,
+                    erupções na pele e coceira. A doença dura em média de 5 a 7 dias, tratada com medicamentos, para os sintomas, e hidratação.
+                    Na dengue grave, sintomas semelhantes evoluem rapidamente, com risco de hemorragia, aumento do fígado e choque, geralmente
+                    entre o 3º e 7º dia.
+                </p>
+            </div>
+        </section>
+        <section class="grid grid-cols-2 max-md:flex max-md:flex-col">
+            <div class="h-full bg-[url('../img/covid-2.webp')] bg-cover bg-center"></div>
+            <div class="bg-green-1 px-[10%] text-green-7 flex flex-col items-center gap-12 py-16 justify-center max-md:h-fit max-md:py-24">
+                <h2 class="text-[calc(2rem+2vw)] font-semibold max-md:text-center max-md:text-[calc(1.2rem+2vw)] max-md:font-bold"> Como se proteger? </h2>
+                <ul class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify list-disc max-md:list-none">
+                    <li>Remova água parada de garrafas, pratos, copos plásticos, vasos e pneus;</li>
+                    <li>Mantenha as saídas de água desobstruídas;</li>
+                    <li>Limpe as calhas regularmente;</li>
+                    <li>Tampe os ralos;</li>
+                    <li>O uso de repelentes é comum durante os períodos quentes do ano. Além disso, é recomendado o uso de repelentes quando alguém é diagnosticado com o vírus da dengue, para evitar a transmição para outras pessoas;</li>
+                    <li>Vacinação: No momento, a vacinação pelo SUS abrange crianças e adolescentes de 10 a 14 anos de idade.</li>
+                </ul>
+            </div>
+        </section>
+        <section class="h-screen w-full bg-[url('../img/covid-4.avif')] bg-cover bg-center bg-no-repeat max-md:h-fit">
+            <div class="w-full h-full flex items-center justify-center text-center gap-8 bg-green-7/70 text-white max-md:py-24">
+                <h2 class="text-[calc(2rem+2vw)] font-bold max-md:text-[calc(1.2rem+2vw)]"> COVID-19 </h2>
+            </div>
+        </section>
+        <section class="h-fit p-24 flex items-center justify-center bg-green-3 max-md:px-12">
+            <h2 class="text-green-7 text-[calc(1rem+1vw)] text-center font-semibold max-md:text-[calc(1.2rem+1vw)]"> 
+                A Covid-19 é uma doença respiratória aguda provocada pelo coronavírus SARS-CoV-2. Ela é potencialmente grave, altamente contagiosa e está disseminada em todo o mundo.
+                A Covid-19 é principalmente transmitida através do: contato direto com uma pessoa infectada; da exposição à gotículas respiratórias contendo o vírus, que são expelidas
+                por uma pessoa infectada; e através de gotículas respiratórias menores, (aerossóis), que contêm o vírus e podem permanecer suspensas no ar.
+            </h2>
+        </section>
+        <section class="h-fit w-full grid grid-cols-2 max-md:flex max-md:flex-col max-md:h-auto">
+            <div class="bg-[#274c5a] flex items-center h-full justify-center text-justify px-[10%] py-16 max-md:h-fit max-md:pt-12 max-md:pb-24 max-md:order-1">
+                <p class="text-white text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)]"> 
+                    A infecção por SARS-CoV-2 pode variar de assintomática a manifestações graves. Os casos assintomáticos são caracterizados por teste positivo para covid-19, mas sem sintomas. Os casos leves apresentam sintomas como tosse, dor de garganta, coriza, febre, fadiga, dores musculares, perda de olfato e paladar, diarreia e dor abdominal. Os casos moderados podem progredir para pneumonia leve a moderada e incluir tosse persistente e febre diária, além de fraqueza, cansaço, falta de apetite e diarreia.
+                    Os casos graves envolvem a Síndrome Respiratória Aguda Grave (SRAG), manifestada por dificuldade respiratória, pressão no tórax e baixa saturação de oxigênio, com possíveis sintomas adicionais em crianças, como respiração rápida e superficial, desidratação e alterações mentais. Complicações críticas incluem infecção generalizada, síndrome do desconforto respiratório agudo (SDRA), falência de órgãos e pneumonia grave, frequentemente exigindo suporte respiratório e internação em UTI.
+                    Cerca de 15% dos casos graves necessitam de suporte de oxigênio, enquanto aproximadamente 5% tornam-se críticos, com complicações como falência respiratória, infecção generalizada, choque séptico e manifestações neurológicas e mentais, mesmo em pacientes assintomáticos.
+                </p>
+            </div>
+            <div class="flex flex-col bg-[#6fd2f7]">
+                <img src="../img/covid-5.jpg" alt="Manchas vermelhas na pele" class="object-cover w-full h-[70%] max-md:h-[50vh]">
+                <div class="flex items-center justify-center h-[30%] max-md:bg-[#274c5a] max-md:h-fit max-md:pt-24">
+                    <h2 class="text-[#274c5a] block text-[calc(1.6rem+1.2vw)] font-extrabold tracking-widest max-md:text-white">SINTOMAS</h2>
+                </div>
+            </div>
+        </section>
+        <section class="grid grid-cols-10 max-md:flex max-md:flex-col">
+            <div class="bg-white col-span-6 px-[10%] text-[#5b5d62] flex flex-col items-center gap-12 py-16 justify-center max-md:h-fit max-md:py-24">
+                <h2 class="text-[calc(2rem+2vw)] font-semibold max-md:text-center max-md:text-[calc(1.2rem+2vw)] max-md:font-bold"> Como se proteger? </h2>
+                <ul class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify list-disc max-md:list-none">
+                    <li class="list-none mb-4">A principal medida de prevenção contra formas graves da covid-19 é a vacinação. Além disso, as medidas não farmacológicas desempenham um papel crucial na prevenção e controle da covid-19, incluindo: </li>
+                    <li>Distanciamento físico: Limitar o contato próximo entre pessoas infectadas e outras reduz as chances de transmissão do SARS-CoV-2. É especialmente importante quando há a possibilidade de indivíduos estarem infectados, mas assintomáticos ou com poucos sintomas, e não estão em isolamento;</li>
+                    <li>Etiqueta respiratória: Ao tossir ou espirrar, é recomendável cobrir a boca e o nariz com um lenço descartável ou com o cotovelo flexionado, para evitar a disseminação de gotículas respiratórias;</li>
+                    <li>Higienização das mãos: Uma das medidas mais eficazes na redução da disseminação de doenças respiratórias. Pode ser feita com álcool 70% ou água e sabão;</li>
+                    <li>Uso de máscaras: O uso adequado de máscaras, principalmente em ambientes fechados e onde o distanciamento físico não é possível, é uma medida importante para prevenir a transmissão do vírus;</li>
+                    <li>Limpeza e desinfecção de ambientes: Manter ambientes limpos e desinfetados contribui para reduzir o risco de contaminação;</li>
+                    <li>Isolamento de casos suspeitos e confirmados: Separar pessoas com suspeita ou confirmação de covid-19 das demais, reduzindo o risco de disseminação do vírus.</li>
+                </ul>
+            </div>
+            <div class="h-full col-span-4 bg-[url('../img/covid-6.jpg')] bg-cover bg-center"></div>
+        </section>
+        <section class="grid grid-cols-2 h-fit max-md:flex max-md:flex-col">
+            <div class="bg-green-7 flex items-center justify-center max-md:pb-8 max-md:pt-16">
+                <h2 class="font-bold text-center text-[calc(1.4rem+1.2vw)] text-white"> COMO DIFERENCIAR? </h2>
+            </div>
+            <div class="bg-green-6 flex items-center justify-center max-md:order-2 max-md:bg-white">
+                <p class="text-[calc(0.5rem+1vw)] py-24 font-medium text-justify px-28 text-white max-md:px-12 max-md:pt-0 max-md:text-[calc(0.8rem+1vw)] max-md:font-normal max-md:pb-16 max-md:bg-green-7">
+                    Os sintomas respiratórios representam a principal diferença entre dengue e covid-19. Enquanto a covid-19 se manifesta com tosse, espirro, dor de garganta, perda de olfato e paladar, na dengue esses sintomas não estão presentes. Na dengue, os sintomas mais comuns são febre alta, dores musculares e articulares, acompanhados do surgimento de manchas avermelhadas na pele, conhecidas como exantema. Portanto, quando não há sinais respiratórios e há presença de características típicas da dengue, torna-se possível distinguir entre as duas doenças e conduzir o diagnóstico de forma adequada.
+                </p>
+            </div>
+        </section>
+        <section class="h-fit p-24 flex items-center justify-center bg-beige-1 max-md:px-12">
+            <h2 class="text-[#8a7f67] text-[calc(1rem+1vw)] text-center font-medium max-md:text-[calc(1.2rem+1vw)]"> Sempre que apresentar algum dos sintomas, procure o acompanhamento de um médico, para um diagnóstico e tratamento precisos. Cuide-se. </h2>
+        </section>
     </main>
     <footer class="h-[40vh] bg-green-6 flex flex-col items-center justify-center text-green-7">
         <div class="flex flex-col items-center gap-2">
