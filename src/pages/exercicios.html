@@ -12,7 +12,7 @@
     <script src="../js/menu.js" defer></script>
     <title>Exercícios</title>
 </head>
-<body class="min-h-screen flex flex-col font-inter">
+<body class="min-h-screen flex flex-col font-inter bg-cover bg-fixed bg-bottom bg-no-repeat bg-[url('../img/fitness-5.jpg')] max-md:bg-[70%]">
     <header class="h-[10vh] flex items-center justify-between px-8 bg-green-5">
         <button class="h-full flex items-center justify-center">
             <a href="../../index.html" class="flex h-full">
@@ -27,7 +27,7 @@
             <li> <a href="./sobre.html" class="h-full flex hover:underline"> Sobre </a> </li>
         </ul>
         <ul id="menu" class="hidden max-md:flex bg-gradient-to-bl from-green-4 to-beige-2 w-screen h-screen fixed bottom-0 left-0 flex-col items-center justify-center text-white text-3xl gap-6 font-medium -translate-y-full ease-linear duration-200 z-20">
-            <button id="close-menu" class="w-[5.5vh] h-[5.5vh] absolute top-4 right-8">
+            <button id="close-menu" class="w-[5.5vh] h-[5.5vh] absolute top-12 right-8">
                 <img src="../img/close.svg" alt="Fechar Menu" class="w-full h-full">
             </button>
             <li> <a href="./se-proteja.html" class="h-full flex"> Se proteja </a> </li>
@@ -41,6 +41,77 @@
         </button>
     </header>
     <main class="flex flex-col items-center justify-center">
+        <section class="h-[90vh] flex flex-col text-white text-[calc(2.5rem+6vw)] font-bold items-start w-full justify-end p-[10vh] max-md:bg-black/20 max-md:items-center max-md:justify-center">
+            <h1>Exercícios</h1>
+        </section>
+        <section class="text-green-2 h-fit bg-green-7 relative overflow-hidden flex flex-col py-20 items-center justify-center pl-[10%] pr-[40%] max-md:px-12 max-md:py-36">
+            <h2 class="text-[calc(2rem+1.5vw)] mb-8 font-medium max-md:text-center max-md:text-[calc(1.2rem+2.5vw)]">A importância do Exercício Físico para a Saúde</h2>
+            <p class="text-[calc(0.5rem+1vw)] mb-8 max-md:text-[calc(0.8rem+1.2vw)]"> 
+                O exercício físico é fundamental para a manutenção da saúde e bem-estar.
+            </p>
+            <p class="text-[calc(0.5rem+1vw)] font-medium mb-2 max-md:text-[calc(0.8rem+1.2vw)] max-md:mb-6 w-full"> 
+                Benefícios:
+            </p>
+            <ul class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1.2vw)] w-full list-disc max-md:list-none">
+                <li class="max-md:mb-4"> Melhora da força muscular, resistência e flexibilidade; </li>                     
+                <li class="max-md:mb-4"> Ajuda na perda de peso e na manutenção de um peso saudável; </li>                     
+                <li class="max-md:mb-4"> Redução do risco de doenças cardíacas, hipertensão e derrames; </li>                     
+                <li class="max-md:mb-4"> Alivio dos sintomas de depressão e ansiedade, melhora no humor e a qualidade do sono; </li>                     
+                <li class="max-md:mb-4"> Ajuda a regular os níveis de glicose no sangue, evitando a diabetes e outras doenças; </li>                     
+                <li class="max-md:mb-4"> Fortalecimento dos Ossos, previnindo a osteoporose e melhorando a densidade óssea; </li>                     
+                <li class="max-md:mb-4"> Melhora na eficiência do sistema cardiovascular e respiratório, proporcionando mais energia para as atividades diárias. </li>                     
+            </ul>
+            <span class="absolute text-[120vh] leading-[100vh] bottom-0 -right-[16%] text-green-2 drop-shadow-[-8px_8px_0px_#638889] max-md:hidden"> ✓ </span>
+        </section>
+        <section class="bg-beige-1 h-fit w-full pt-24 flex flex-col">
+            <h2 class="text-[calc(1rem+2vw)] text-[#8a7f67] font-medium text-center mb-24">Exercícios simples para uma rotina de treinos em casa</h2>
+            <div class="grid grid-cols-2 max-md:flex max-md:flex-col">
+                <div class="bg-white px-[10%] flex flex-col items-center gap-12 h-[80vh] py-16 justify-center order-1 max-md:h-fit max-md:py-24">
+                    <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]"> Polichinelos </h2>
+                    <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify">Como fazer: Fique em pé com os pés juntos e os braços ao lado do corpo. Salte abrindo as pernas e levantando os braços acima da cabeça. Volte à posição inicial e repita.</p>
+                    <p class="text-[calc(0.5rem+1vw)] font-semibold max-md:text-[calc(0.8rem+1vw)] max-md:text-center">Este exercicio melhora a condição cardiovascular e a coordenação motora.</p>
+                </div>
+                <div class="bg-green-1 px-[10%] flex flex-col items-center gap-12 h-[80vh] py-16 justify-center order-2 max-md:h-fit max-md:py-24">
+                    <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]"> Agachamento </h2>
+                    <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> Como fazer: Fique em pé com os pés alinhados com os ombros. Flexione os joelhos e desça os quadris como se fosse sentar em uma cadeira, sem passar de um angulo de mais ou menos 90 graus, volte à posição inicial e repita. Comece com 10 e aumente semalmente o número de repetições o maximo que aguentar. </p>
+                    <p class="text-[calc(0.5rem+1vw)] font-semibold max-md:text-[calc(0.8rem+1vw)] max-md:text-center"> Este exercício fortalece principalmente pernas e glúteos. </p>
+                </div>
+                <div class="h-[80vh] bg-[url('../img/fitness-2.jpg')] bg-cover bg-center order-3"></div>
+                <div class="bg-green-2 px-[10%] flex flex-col items-center gap-12 h-[80vh] py-16 justify-center order-4 max-md:h-fit max-md:py-24">
+                    <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]"> Flexões </h2>
+                    <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> Como fazer: Deite-se de bruços e coloque as mãos no chão, alinhadas com os ombros. Empurre o corpo para cima até que os braços estejam estendidos, desça lentamente até quase encostar o peito no chão, mantendo sempre o tronco reto, e repita. Dica: se estiver muito difícil faça com os joelhos apoiados no chão.</p>
+                    <p class="text-[calc(0.5rem+1vw)] font-semibold max-md:text-[calc(0.8rem+1vw)] max-md:text-center"> Este exercício fortalece peito, ombros e tríceps. </p>
+                </div>
+                <div class="bg-green-3 px-[10%] flex flex-col items-center gap-12 h-[80vh] order-5 py-16 justify-center max-md:h-fit max-md:py-24">
+                    <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]"> Prancha </h2>
+                    <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> Como fazer: Deite-se de bruços e levante o corpo apoiado nos antebraços e na ponta dos pés. Mantenha o corpo reto e segure a posição pelo máximo de tempo possível. </p>
+                    <p class="text-[calc(0.5rem+1vw)] font-semibold max-md:text-[calc(0.8rem+1vw)] max-md:text-center"> Este exercício fortalece principalmente o abdômen além de melhorar a postura. </p>
+                </div>
+                <div class="h-[80vh] bg-[url('../img/fitness-3.jpg')] bg-cover bg-bottom order-6"></div>
+                <div class="bg-green-4 px-[10%] flex flex-col items-center gap-12 h-[80vh] order-7 py-16 justify-center max-md:h-fit max-md:py-24">
+                    <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]"> Afundos </h2>
+                    <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> Como fazer: Fique em pé e dê um passo à frente com uma perna, flexionando ambos os joelhos até que o joelho traseiro quase toque o chão. Volte à posição inicial e repita com a outra perna. Comece com 10 e aumente semalmente o número de repetições o maximo que aguentar.</p>
+                    <p class="text-[calc(0.5rem+1vw)] font-semibold max-md:text-[calc(0.8rem+1vw)] max-md:text-center"> Este exercício fortalece pernas e glúteos. </p>
+                </div>
+                <div class="bg-green-5 px-[10%] flex flex-col items-center gap-12 h-[80vh] order-8 py-16 justify-center max-md:h-fit max-md:py-24">
+                    <h2 class="text-[calc(2rem+2vw)] text-center font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]"> Elevação de Panturrilhas </h2>
+                    <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> Como fazer: Fique em pé com os pés na largura dos ombros. Levante os calcanhares do chão, ficando na ponta dos pés, e depois desça lentamente. Repita. </p>
+                    <p class="text-[calc(0.5rem+1vw)] font-semibold max-md:text-[calc(0.8rem+1vw)] max-md:text-center"> Este exercício fortalece as panturrilhas. </p>
+                </div>
+                <div class="bg-green-6 px-[10%] text-white flex flex-col items-center gap-12 h-[80vh] order-9 py-16 justify-center max-md:h-fit max-md:py-24">
+                    <h2 class="text-[calc(2rem+2vw)] font-medium max-md:text-center max-md:text-[calc(1.2rem+2vw)]"> Abdominais </h2>
+                    <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> Como fazer: Deite-se de costas com os joelhos flexionados e os pés no chão. Coloque as mãos atrás da cabeça e levante os ombros em direção aos joelhos, contraindo os abdominais. Volte à posição inicial e repita. Comece com 10 e aumente semalmente o número de repetições o maximo que aguentar.</p>
+                    <p class="text-[calc(0.5rem+1vw)] font-semibold max-md:text-[calc(0.8rem+1vw)] max-md:text-center"> Este exercício fortalece o abdômen </p>
+                </div>
+                <div class="h-[80vh] bg-[url('../img/fitness-4.jpg')] bg-cover bg-center order-10 max-md:order-8"></div>
+                <div class="h-[80vh] bg-[url('../img/fitness-1.jpg')] bg-cover bg-center order-11"></div>
+                <div class="bg-green-7 px-[10%] text-white flex flex-col items-center gap-12 h-[80vh] py-16 justify-center max-md:h-fit max-md:py-24 order-12">
+                    <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> Esses exercícios são simples e eficazes para quem está começando, ajudando a construir uma base sólida de condicionamento físico. </p>
+                    <p class="text-[calc(0.5rem+1vw)] max-md:text-[calc(0.8rem+1vw)] max-md:text-justify"> Lembre-se de sempre buscar mais conhecimento sobre exercicios fisico e como obter mais resultados. </p>
+                    <h2 class="text-[calc(2rem+2vw)] font-semibold max-md:text-center max-md:text-[calc(1.2rem+2vw)]"> Bom treino! </h2>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="h-[40vh] bg-green-6 flex flex-col items-center justify-center text-green-7">
         <div class="flex flex-col items-center gap-2">
